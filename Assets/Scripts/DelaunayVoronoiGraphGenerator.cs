@@ -23,7 +23,7 @@ public static class DelaunayVoronoiGraphGenerator
         DVGraph newGraph = new DVGraph(width, height, nodeSize);
 
         int positionsCount = 1 + diagonalStepsCount * 2; //Final number of possible node positions 
-        int allowedOffsetRadius = nodeSize / 8; //Offset from grid cell center that determines possible node positions 
+        int allowedOffsetRadius = nodeSize / 5; //Offset from grid cell center that determines possible node positions 
 
         NodesCombination[,,,] combinationsMatrix; //Contains data about all possible nodes combinations in neighboring cells square
 
